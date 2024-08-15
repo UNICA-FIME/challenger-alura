@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="header">
+            <img src="./img/Vector.png" alt="logo de alura">
+        </div>
+    </header>
+
+    <main>
+        <div id="presentacion">
+            <div class="presentacion__seccionuno">
+                <!-- <input type="text" value="Ingrese el texto aqui"> -->
+                <div class="presentacion__seccionuno_texto">
+                    <textarea id="textoUsuario" class="textoFinal" placeholder="Ingrese el texto aqui"
+                        oninput="cambiaLaAltura()" onclick="borra()" focus="focus"></textarea>
+                </div>
+                <!-- <div class="presentacion__seccionuno__aviso"> -->
+
+                <!-- </div> -->
+                <div class="presentacion__seccionuno__botonesTexto">
+                    <img class="presentacion__seccionuno__aviso_advertencia" src="./img/Group.png" alt="alerta">
+                    <span> Solo letras minúsculas y sin acentos</span>
+                    <div class="presentacion__seccionuno__botonesTexto_botones">
+                        <button class="presentacion__seccionuno__botonesTexto_botones_encriptar"
+                            onclick="ingresoUsuario()">Encriptar</button>
+                        <button class="presentacion__seccionuno__botonesTexto_botones_desencriptar"
+                            onclick="ingresoUsuarioDesencriptar()">desencriptar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="presentacion__resultado" id="agregarestilo">
+                <img class="presentacion__resultado__imagen" id="nuneco" src="./img/Muñeco.png" alt="vista de muñeco">
+                <div class="presentacion__resultado__mensaje">
+                    <p class="presentacion__resultado__mensaje__p1" id="textone">Ningún mensaje fue encontrado</p>
+                    <p class="presentacion__resultado__mensaje__p2" id="textoResultado">Ingresa el texto que desees
+                        encriptar o desencriptar.</p>
+                </div>
+                <button class="presentacion__resultado__encriptado__button" id="oculto"
+                    onclick="copia()">Copiar</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p> <a href="https://github.com/UNICA-FIME?tab=repositories">Desarrollado por Juan carlos Garay</a></p>
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
